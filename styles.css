@@ -1,12 +1,17 @@
 * {
   box-sizing: border-box;
-  border: 1px dashed blue;
 }
 
 body {
   margin: 0;
   height: 100%;
   width: 100%;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .main-container {
@@ -16,12 +21,26 @@ body {
 
 .header {
   margin-top: 50px;
+  padding: 50px 15px 5px;
   display: flex;
   flex: 2;
 }
 
 .title-section {
   flex: 2;
+}
+
+.main-title {
+  font-size: 1.2rem;
+  color: #ed6436;
+  word-spacing: 5px;
+}
+
+.secondary-title {
+  margin-top: 5px;
+  font-size: 2.8rem;
+  word-spacing: 10px;
+  width: 100%;
 }
 
 .view-button {
@@ -33,21 +52,59 @@ body {
 
 .btn {
   width: 100px;
-  height: 70px;
+  height: 50px;
+  border-radius: 0 25px 25px 35px;
+  border: none;
+  background-color: #ed6436;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #ed6436;
+  border: 2px #ed6436 solid;
 }
 
 .carrusel-container {
   display: flex;
-  margin-top: 75px;
+  margin-top: 5px;
 }
 
 .carrusel-image {
+  position: relative;
   padding: 20px;
 }
 
 .pet-image {
-  width: 100%;
+  width: 90%;
+  height: 140%;
   border-radius: 25px;
+}
+
+.img-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(177, 183, 188, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 25px;
+  width: 90%;
+  height: 125%;
+  text-align: center;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.carrusel-image:hover .img-message {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
