@@ -73,6 +73,7 @@ html {
 }
 
 .carrusel-image {
+  position: relative;
   padding: 20px;
 }
 
@@ -80,4 +81,29 @@ html {
   width: 90%;
   height: 140%;
   border-radius: 25px;
+}
+
+.img-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(177, 183, 188, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 25px;
+  width: 90%;
+  height: 125%;
+  text-align: center;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.carrusel-image:hover .img-message {
+  visibility: visible;
+  opacity: 1;
 }
