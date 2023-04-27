@@ -1,12 +1,17 @@
 * {
   box-sizing: border-box;
-  border: 1px dashed blue;
 }
 
 body {
   margin: 0;
   height: 100%;
   width: 100%;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .main-container {
@@ -16,12 +21,26 @@ body {
 
 .header {
   margin-top: 50px;
+  padding: 50px 15px 5px;
   display: flex;
   flex: 2;
 }
 
 .title-section {
   flex: 2;
+}
+
+.main-title {
+  font-size: 1.2rem;
+  color: #ed6436;
+  word-spacing: 5px;
+}
+
+.secondary-title {
+  margin-top: 5px;
+  font-size: 2.8rem;
+  word-spacing: 10px;
+  width: 100%;
 }
 
 .view-button {
@@ -33,12 +52,16 @@ body {
 
 .btn {
   width: 100px;
-  height: 70px;
+  height: 50px;
+  border-radius: 0 25px 25px 35px;
+  border: none;
+  background-color: #ed6436;
+  color: #fff;
 }
 
 .carrusel-container {
   display: flex;
-  margin-top: 75px;
+  margin-top: 5px;
 }
 
 .carrusel-image {
@@ -46,7 +69,8 @@ body {
 }
 
 .pet-image {
-  width: 100%;
+  width: 90%;
+  height: 140%;
   border-radius: 25px;
 }
 
