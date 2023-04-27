@@ -58,6 +58,13 @@ html {
   border: none;
   background-color: #ed6436;
   color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #ed6436;
+  border: 2px #ed6436 solid;
 }
 
 .carrusel-container {
